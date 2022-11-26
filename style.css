@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-:root{
-    --bg--color-main:red;
-    --white: #ffffff;
-    --small-text: 12px;
-    --normal-text: 16px:
-    --large-text: 36px;
-}
 *{  
     margin: 0;
     padding: 0;
@@ -38,11 +31,6 @@ nav{
     font-size: 36px;
     font-weight: 700;
 }
-
-.nav-container{
-    
-}
-
 .nav-container ul{
     display: flex;
     align-items: center;
