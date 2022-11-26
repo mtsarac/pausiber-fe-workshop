@@ -53,8 +53,14 @@ nav{
     margin-right: 30px;
     color: white;
     text-transform: capitalize;
+    border: none;
+    transition: .4s all ease-in-out;
 }
-.nav-container ul .nav-link::last-child{
+.nav-container ul .nav-link:hover{
+    border-bottom: 1px solid white;
+
+}
+.nav-container ul .nav-link:last-child{
     margin-right: 0px;
 }
 main{
@@ -115,6 +121,7 @@ main .main-container .main-infos .button-content button:hover{
     box-shadow: -4px -4px 0px 0px #eb7711bf;
     background-color: #fff;
     color: #000;
+    animation: shake 0.3s 3 linear;
 }
 main .main-container .main-photo{
     width: 600px;
@@ -126,10 +133,69 @@ main .main-container .main-photo .photo{
     border: 1px solid #000;
     box-shadow:10px 10px 5px black;
     border-radius: 25px;
-    
+
 }
 main .main-container .main-photo .photo img{
     width: 500px;
     height: fit-content;
     transform: scaleX(-1);
+    user-select: none;
+}
+
+.social-container{
+    position: absolute;
+    right: 45px;
+    top: 40%;
+}
+
+.social-container a .social-item{
+    font-size: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.social-container a .social-item.instagram:hover{
+    background-color: #E4405F;
+    color: #fff;
+}
+.social-container a .social-item.twitter:hover{
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.social-container a .social-item.github:hover{
+    background-color: #171515;
+    color: #fff;
+}
+.social-container a .social-item.youtube:hover{
+    background-color: #CD201F;
+    color: #fff;
+}
+.social-container a .social-item.linkedin:hover{
+    background-color: #0A66C2;
+    color: #fff;
+}
+
+
+@keyframes shake {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(7deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
