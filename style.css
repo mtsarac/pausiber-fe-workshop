@@ -14,7 +14,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 nav{
-    height: 70px;
+    height: 90px;
     width: 100%;
     background-color: black;
     color: white;
@@ -24,17 +24,14 @@ nav{
     align-items: center;
 
 }
-main{
-    width: 100%;
-    height: calc(100% - 70px);
-    background-color: aquamarine;
-}
+
 .logo-container{
     font-size: 36px;
     font-weight: 700;
 }
 
 .nav-container{
+    
 }
 
 .nav-container ul{
@@ -44,10 +41,34 @@ main{
     list-style: none;
 }
 .nav-container ul .nav-link{
-    margin-right: 20px;
+    margin-right: 30px;
     color: white;
     text-transform: capitalize;
 }
 .nav-container ul .nav-link::last-child{
     margin-right: 0px;
 }
+main{
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: rgb(219, 12, 201);
+    padding: 75px 150px 75px 30px;
+}
+main .main-container{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+main .main-container .main-infos-content{}
+
+main .main-container .main-infos-content .text-content{}
+
+main .main-container .main-infos-content .text-content h2{}
+
+main .main-container .main-infos-content .text-content span{}
+
+main .main-container .main-infos-content button-content{}
+
+main .main-container .main-infos-content button-content button{}
+
+main .main-container .main-photo{}
